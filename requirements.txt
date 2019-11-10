@@ -3,4 +3,4 @@ twilio==6.33.0
 gunicorn==20.0.0
 fastai==1.0.57
 torch==1.2.0
-torchvision-cpu==0.2.2
+torchvision==0.2.2
