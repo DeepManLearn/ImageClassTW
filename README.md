@@ -26,4 +26,6 @@ Twilio is used to receive chat message with images from WhatsApp chat. Twilio sa
 
 ![Screen1](assets/IMG_E1962.JPG)
 
-![Screen2](assets/IMG_E1963.JPG)
+![Screen2](assets/IMG_E1966.JPG)
+
+![Screen3](assets/IMG_E1963.JPG)
