@@ -18,7 +18,11 @@ model = load_learner('.')
 def load_image(raw_bytes: ByteString) -> Image:
     img = open_image(BytesIO(raw_bytes))
     return img
-	
+
+@app.route("/")
+def hello():
+    return "Welcome to Bird Image Classifier!\nPlease, send POST request to /whatsapp."
+
 
 @app.route("/whatsapp", methods=["GET", "POST"])
 def reply_whatsapp():
