@@ -1,24 +1,29 @@
-FROM python:3.7.5-slim-stretch
+FROM python:3.7.1-slim-stretch
 
 RUN apt update && \
     apt install -y python3-dev gcc
 
 WORKDIR app 
 # Install pytorch and fastai
-#RUN pip install torch_nightly -f https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html
+RUN pip install Flask==1.0.2
+RUN pip install twilio==6.33.0
+RUN pip install torch==1.2.0+cpu torchvision==0.4.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+RUN pip install fastai
 
-ADD requirements.txt .
 ADD app.py .
 ADD export.pkl .
-RUN pip install -r requirements.txt
+
+#ADD requirements.txt .
+
+#RUN pip install -r requirements.txt
 #pip install --no-cache-dir -r
 #ADD models models
 #ADD src src
 
 # Run it once to trigger resnet download
-RUN python app.py prepare
+#RUN python app.py prepare
 
 #EXPOSE 5000
 
 # Start the server
-CMD ["python", "app.py", "serve"]
+CMD ["python", "app.py"]
