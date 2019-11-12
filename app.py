@@ -11,7 +11,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 from fastai.vision import *
 
 app = Flask(__name__)
-
+port = int(os.environ.get("PORT", 5000))
 
 model = load_learner('.')
 
@@ -49,4 +49,4 @@ def reply_whatsapp():
     return str(response)
 
 if __name__ == "__main__":
-    app.run(debug=False,host='0.0.0.0')
+    app.run(debug=False,host='0.0.0.0',port=port)
