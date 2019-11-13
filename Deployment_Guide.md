@@ -49,10 +49,10 @@ Note:  After 15 minutes of inactivity, Heroku will suspend the app.  The next ti
 
 Configure Twilio sandbox by entering incoming message handler endpoint as App url on heroku https://bird-img-classifier.herokuapp.com/whatsapp
 
-![Config](assets/SandboxConfig.PNG)
+![Config](assets/SandboxConfig.png)
 
 ## Test the app
-- The App can be tested by joining Twilio Sandbox by sending a ![Join](assets/SandboxJoin.PNG)
+- The App can be tested by joining Twilio Sandbox by sending a ![Join](assets/SandboxJoin.png)
 - After successfully joining send any message or Image.
 - As explained above App may be restating on Heroku, so first message might get timedout. Please, try again afer 2-3 minutes. 
 - Give it a try!  . 

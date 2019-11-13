@@ -22,7 +22,7 @@ Flask is used to expose Restful Serveice for model inference to predict any imag
 
 Twilio is used to receive chat message with images from WhatsApp chat. Twilio sandbox is configured for the /whatsapp route.
 
-The App is Dockerized and deployed on Heroku: Cloud Application Platform. ( For detail steps see [Deployment Guide] (Deployment_Guide.md) )
+The App is Dockerized and deployed on Heroku: Cloud Application Platform. ( For detail steps see [Deployment Guide](Deployment_Guide.md) )
 
 ## Demo
 
