@@ -11,6 +11,8 @@ from twilio.twiml.messaging_response import MessagingResponse
 from fastai.vision import *
 
 app = Flask(__name__)
+
+#Required for container deployed in Heroku, as Heroku may assign some other port
 port = int(os.environ.get("PORT", 5000))
 
 model = load_learner('.')
@@ -49,4 +51,6 @@ def reply_whatsapp():
     return str(response)
 
 if __name__ == "__main__":
-    app.run(debug=False,host='0.0.0.0',port=port)
+#   app.run(debug=True)
+#   app.run(debug=False,host='0.0.0.0')            # For Dockerized container, as localhost won't be accessicible to host OS
+    app.run(debug=False,host='0.0.0.0',port=port)  # For Heroku deployed container, as Heroku may assign any other port than port 5000
