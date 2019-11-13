@@ -6,7 +6,7 @@ But due to Slug size limit of 500 MB on Heroku, the app was dockerized and deplo
  
 ## Dockerization
 
-To reduce the App image, the container is build using slim version of Python and CPU only version of Pytorch. ( See[Dockerfile](Dockerfile) )
+To reduce the App image, the container is build using slim version of Python and CPU only version of Pytorch. ( See [Dockerfile](Dockerfile) )
 
 Use following commands to build container and run on local machine:
 
@@ -49,10 +49,10 @@ Note:  After 15 minutes of inactivity, Heroku will suspend the app.  The next ti
 
 Configure Twilio sandbox by entering incoming message handler endpoint as App url on heroku https://bird-img-classifier.herokuapp.com/whatsapp
 
-![Twilio] (assets/Twilio Sandbox config.PNG)
+![Config](assets/SandboxConfig.PNG)
 
 ## Test the app
-- The App can be tested by joining Twilio Sandbox by sending a ![TwilioJoin](assets/Twilio Sandbox join.PNG)
+- The App can be tested by joining Twilio Sandbox by sending a ![Join](assets/SandboxJoin.PNG)
 - After successfully joining send any message or Image.
 - As explained above App may be restating on Heroku, so first message might get timedout. Please, try again afer 2-3 minutes. 
 - Give it a try!  . 
