@@ -1,6 +1,6 @@
 Flask==2.2.5
 gunicorn==20.0.0
 twilio==6.33.0
-torch==1.2.0
+torch==1.13.1
 torchvision==0.4.0
 fastai==1.0.57
